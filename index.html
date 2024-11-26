@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/icons/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alem</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="head-up">
+          <div class="container">
+            <div class="head-up__network">
+              <p class="up__network-text">Социальные сети:</p>
+              <img
+                src="./assets/icons/teleg.svg"
+                class="up__network-telegram"
+                alt=""
+              />
+              <img
+                src="./assets/icons/facebook.svg"
+                class="up__network-facebook"
+                alt=""
+              />
+            </div>
+            <div class="language-selector" tabindex="0">
+              <img
+                src="https://flagcdn.com/w20/ru.png"
+                alt="Russian Flag"
+                class="flag"
+              />
+              <span class="language" id="current-language">Русский</span>
+              <div class="arrow">
+                <img src="./assets/icons/arrow-bottom.svg" alt="" />
+              </div>
+              <div class="dropdown">
+                <div
+                  class="option"
+                  data-lang="ru"
+                  onclick="changeLanguage('Русский', 'https://flagcdn.com/w20/ru.png')"
+                >
+                  Русский
+                </div>
+                <div
+                  class="option"
+                  data-lang="en"
+                  onclick="changeLanguage('English', 'https://flagcdn.com/w20/gb.png')"
+                >
+                  English
+                </div>
+                <div
+                  class="option"
+                  data-lang="uz"
+                  onclick="changeLanguage('O‘zbek', 'https://flagcdn.com/w20/uz.png')"
+                >
+                  O‘zbek
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-main">
+          <div class="container">
+            <nav class="navbar">
+              <a href="./index.html" class="nav-logo">
+                <img
+                  src="./assets/icons/logo-nav.svg"
+                  class="nav-logo__img"
+                  alt=""
+                />
+              </a>
+              <ul class="item">
+                <li class="item-list">
+                  <a href="" class="item-link">Главная</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">О компании</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">Продукция</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">Объекты</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">Контакты</a>
+                </li>
+              </ul>
+              <a href="tel:+998950220101">
+                <img src="./assets/icons/phone.svg" alt="" class="phone-icon" />
+                <div class="line-phone"></div>
+                <span class="phone-text">+998 (95) 022-01-01</span>
+              </a>
+            </nav>
+            <div class="head-main__content">
+              <h1 class="head-title">Производители</h1>
+              <h1 class="head-titleTwo">лакокрасочных материалов</h1>
+              <h1 class="head-titleThree">в Узбекистане</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main-one">
+          <div class="container">
+            <div class="main-one__content">
+              <div class="one__content-info">
+                <img src="./assets/icons/about.svg" alt="" />
+              </div>
+              <h2 class="one__content-title">
+                Создавать то, что выходит за рамки привычного
+              </h2>
+              <p class="one__content-text">
+                Alem Painting – важный шаг на нашем пути к устойчивому будущему.
+                Кроме разработки уникальных красок, мы усиленно занимаемся
+                внедрением более экологичной упаковки для наших продуктов.
+              </p>
+              <button type="button" class="one__content-btn">
+                Подробнее о нас
+              </button>
+            </div>
+            <div class="main-one__box">
+              <img
+                src="./assets/images/main-one-photo.png"
+                class="one__box-img"
+                alt=""
+              />
+              <div class="main-one__years">
+                <div class="one__years-img">
+                  <img src="./assets/icons/seven.svg" alt="" />
+                  <img src="./assets/icons/badge.svg" alt="" />
+                </div>
+                <p class="one__years-text">лет опыта</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="main-one__line"></div>
+          </div>
+        </section>
+        <section class="main-two">
+          <div class="container">
+            <div class="rgbBox">
+              <img src="./assets/icons/rgb.svg" alt="" class="rgbBox__img" />
+            </div>
+            <h1 class="main-two__title">
+              Посмотрите наши самые популярные цвета
+            </h1>
+            <!-- Swiper -->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swipeColorBox"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Rich Blue</h2>
+                    <p class="swipeSlideBox__text">SW 1041</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox2"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Wordly Gray</h2>
+                    <p class="swipeSlideBox__text">SW 7043</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox3"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Tricorn Black</h2>
+                    <p class="swipeSlideBox__text">SW 6258</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox4"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Mindful Gray</h2>
+                    <p class="swipeSlideBox__text">SW 7016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox5"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Kilim Beige</h2>
+                    <p class="swipeSlideBox__text">SW 6106</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox6"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Eider White</h2>
+                    <p class="swipeSlideBox__text">SW 7014</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Rich Blue</h2>
+                    <p class="swipeSlideBox__text">SW 1041</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox2"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Wordly Gray</h2>
+                    <p class="swipeSlideBox__text">SW 7043</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox3"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Tricorn Black</h2>
+                    <p class="swipeSlideBox__text">SW 6258</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox4"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Mindful Gray</h2>
+                    <p class="swipeSlideBox__text">SW 7016</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox5"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Kilim Beige</h2>
+                    <p class="swipeSlideBox__text">SW 6106</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swipeColorBox6"></div>
+                  <div class="swipeSlideBox">
+                    <h2 class="swipeSlideBox__title">Eider White</h2>
+                    <p class="swipeSlideBox__text">SW 7014</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Навигация -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="main-three">
+          <div class="container">
+            <div class="starBox">
+              <img
+                src="./assets/icons/three-box-stars.svg"
+                alt=""
+                class="starBox-img"
+              />
+            </div>
+            <h2 class="mainThree__title">Преимущества наших продуктов</h2>
+            <div class="mainThree-content">
+              <div class="threeBox">
+                <div class="threeBox-mini">
+                  <img
+                    src="./assets/icons/threebox-one.svg"
+                    class="threeBox-mini__img"
+                    alt=""
+                  />
+                </div>
+                <h2 class="threeBox__title">Высокое качество</h2>
+                <p class="threeBox__text">
+                  Наши краски обеспечивают стойкие цвета и надежное покрытие
+                  благодаря современным технологиям.
+                </p>
+              </div>
+              <div class="threeBox">
+                <div class="threeBox-mini">
+                  <img
+                    src="./assets/icons/threeBox-two.svg"
+                    class="threeBox-mini__img"
+                    alt=""
+                  />
+                </div>
+                <h2 class="threeBox__title">Большой ассортимент</h2>
+                <p class="threeBox__text">
+                  Предлагаем широкий выбор красок и оттенков для любых
+                  потребностей.
+                </p>
+              </div>
+              <div class="threeBox">
+                <div class="threeBox-mini">
+                  <img
+                    src="./assets/icons/threebox-three.svg"
+                    class="threeBox-mini__img"
+                    alt=""
+                  />
+                </div>
+                <h2 class="threeBox__title">Экологичность</h2>
+                <p class="threeBox__text">
+                  Наша продукция безопасна и соответствует высоким экологическим
+                  стандартам.
+                </p>
+              </div>
+              <div class="threeBox">
+                <div class="threeBox-mini">
+                  <img
+                    src="./assets/icons/threebox-four.svg"
+                    class="threeBox-mini__img"
+                    alt=""
+                  />
+                </div>
+                <h2 class="threeBox__title">Долговечность</h2>
+                <p class="threeBox__text">
+                  Краски устойчивы к выгоранию и истиранию, обеспечивая
+                  длительный результат.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-four">
+          <div class="container">
+            <div class="basketBox">
+              <img src="./assets/icons/basket.svg" alt="" />
+            </div>
+            <h2 class="mainFour__title">Категории продукции</h2>
+            <div class="swiper swiper-one">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Эмаль</h2>
+                    <p class="mainFour__card-text">
+                      Декоративные и антикоррозионные покрытия для металлических
+                      изделий с эффектом молотковой эмали.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Лаки</h2>
+                    <p class="mainFour__card-text">
+                      Экологически безопасные акриловые краски для отделки
+                      интерьеров и фасадов.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Разбавитель</h2>
+                    <p class="mainFour__card-text">
+                      Долговечные и стойкие алкидные и нитро-эмали для
+                      внутренних и наружных работ.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Смолы</h2>
+                    <p class="mainFour__card-text">
+                      Высококачественные алкидные и уралкидные грунтовки для
+                      подготовки поверхностей под окраску.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Разбавитель</h2>
+                    <p class="mainFour__card-text">
+                      Долговечные и стойкие алкидные и нитро-эмали для
+                      внутренних и наружных работ.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Смолы</h2>
+                    <p class="mainFour__card-text">
+                      Высококачественные алкидные и уралкидные грунтовки для
+                      подготовки поверхностей под окраску.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFour__card">
+                    <h2 class="mainFour__card-title">Смолы</h2>
+                    <p class="mainFour__card-text">
+                      Высококачественные алкидные и уралкидные грунтовки для
+                      подготовки поверхностей под окраску.
+                    </p>
+                    <a href="" class="mainFour__card-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination -->
+              <div class="swiper-pagination swiper-pagination-one"></div>
+            </div>
+            <div class="main-four__line"></div>
+          </div>
+        </section>
+        <section class="main-five">
+          <div class="container">
+            <div class="objectsBox">
+              <img src="./assets/icons/basket.svg" alt="" />
+            </div>
+            <h2 class="objectsBox__title">ОБЪЕКТЫ</h2>
+            <div class="swiper swiper-two">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Kilim Beige</h2>
+                      <p class="mainFive__card-text">SW 6106</p>
+                    </div>
+                  </div>
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color2"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Tricorn Black</h2>
+                      <p class="mainFive__card-text">Tricorn Black</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Kilim Beige</h2>
+                      <p class="mainFive__card-text">SW 6106</p>
+                    </div>
+                  </div>
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color2"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Tricorn Black</h2>
+                      <p class="mainFive__card-text">Tricorn Black</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Kilim Beige</h2>
+                      <p class="mainFive__card-text">SW 6106</p>
+                    </div>
+                  </div>
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color2"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Tricorn Black</h2>
+                      <p class="mainFive__card-text">Tricorn Black</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Kilim Beige</h2>
+                      <p class="mainFive__card-text">SW 6106</p>
+                    </div>
+                  </div>
+                  <div class="mainFive__card">
+                    <div class="mainFive__card-color2"></div>
+                    <div class="mainFive__card-mini">
+                      <h2 class="mainFive__card-title">Tricorn Black</h2>
+                      <p class="mainFive__card-text">Tricorn Black</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Arrows -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- Pagination -->
+            </div>
+            <div class="main-four__line"></div>
+          </div>
+        </section>
+        <section class="main-six">
+          <div class="container">
+            <div class="trustBox">
+              <img src="./assets/icons/trust.svg" alt="" />
+            </div>
+            <h2 class="main-six__title">Нам доверяют</h2>
+            <div class="main-six__content">
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image2.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image3.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image4.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image5.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image6.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image7.svg" alt="" />
+              </div>
+              <div class="main-six__card">
+                <img src="./assets/icons/trust-image8.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__content__form">
+              <h2 class="footer__content__form-title">
+                Закажите обратный звонок эксперта
+              </h2>
+              <p class="footer__content__form-text">
+                Отправьте данные и в ближайшее время вам перезвонит один из
+                экспертов.
+              </p>
+              <form action="" method="">
+                <div class="inp-group">
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    class="inp-group__name"
+                  />
+                  <div class="input-container">
+                    <input id="phone" type="tel" />
+                  </div>
+                </div>
+                <textarea
+                  name=""
+                  class="footer__content__form-textarea"
+                  placeholder="Комментарий"
+                ></textarea>
+                <button type="button" class="footer__content__form-btn">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="footer__content__callback">
+              <h2 class="footer__content__callback-title">Свяжитесь с нами</h2>
+              <a
+                href="tel:+998950220101"
+                class="footer__content__callback-phone"
+              >
+                <img src="./assets/icons/phone.svg" alt="" />
+                +998 (95) 022-01-01</a
+              >
+              <a
+                href="mailto:alem@info.uz"
+                class="footer__content__callback-email"
+              >
+                <img src="./assets/icons/email-foot.svg" alt="" />
+                alem@info.uz</a
+              >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.6212167944855!2d69.28382387646641!3d41.295347571311765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8accc24bae4f%3A0xf0f54631b55a44a7!2z0JTQstC-0YDQtdGGINC60YPQu9GM0YLRg9GA0Ysg0LbQtdC70LXQt9C90L7QtNC-0YDQvtC20L3QuNC60L7Qsg!5e0!3m2!1sru!2s!4v1732647363826!5m2!1sru!2s"
+                width="100%"
+                height="144"
+                style="border: 0; border-radius: 12px"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="foot-end">
+            <img src="./assets/icons/logo.svg" alt="" />
+            <div class="foot-linear"></div>
+          </div>
+          <p class="footer-end__text">
+            © 2024 OOO “Alem.uz”. Все права защищены.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
