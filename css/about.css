@@ -1,0 +1,224 @@
+@import url(../assets/fonts/SFPro/stylesheet.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1540px;
+  margin: 0px auto;
+  padding: 0px 50px;
+}
+/* header-start */
+.header {
+  width: 100%;
+  min-height: 940px;
+  background-image: url(../assets/images/back-head.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.head-up {
+  background-color: rgba(4, 30, 53, 1);
+  width: 100%;
+  padding: 15px 0px;
+}
+.head-up .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.option {
+  color: rgba(255, 255, 255, 1);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.48px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.language {
+  color: rgba(255, 255, 255, 1);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.48px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.head-up__network {
+  display: flex;
+  align-items: center;
+}
+.up__network-text {
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 8px;
+}
+.up__network-telegram {
+  margin-right: 10px;
+}
+.up__network-facebook {
+}
+.head-main {
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 108px;
+  margin-bottom: 56px;
+}
+.nav-logo {
+}
+.nav-logo__img {
+}
+.item {
+  display: flex;
+  align-items: center;
+  min-width: 600px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.item-list {
+}
+.item-link {
+  font-family: SF Pro Display;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22.67px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.item ~ a {
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.48px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  width: 243px;
+  height: 49px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+
+  box-shadow: 0px 2px 20px 0px rgba(180, 2, 25, 0.5);
+  background-color: rgba(180, 2, 25, 1);
+  padding: 15.5px 14px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.phone-icon {
+  margin-right: 12px;
+}
+.line-phone {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 12px;
+}
+.phone-text {
+}
+.head-main__content {
+}
+.head-title {
+  font-family: SF Pro Display;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 70.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.head-titleTwo {
+  color: rgba(29, 85, 183, 1);
+  font-family: SF Pro Display;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 70.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.head-titleThree {
+  font-family: SF Pro Display;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 70.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+/* navbar -start*/
+/* lang-start */
+.language-selector {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px; /* Adjust width as needed */
+  position: relative; /* Position context for dropdown */
+}
+
+.language-selector:focus .dropdown {
+  display: block; /* Show dropdown when focused */
+}
+
+.flag {
+  width: 20px; /* Size of the flag */
+  height: 15px; /* Size of the flag */
+  margin-right: 8px; /* Space between flag and text */
+}
+
+.language {
+  margin-right: auto; /* Push the dropdown arrow to the right */
+}
+
+.arrow {
+  font-size: 12px; /* Adjust arrow size */
+  padding-left: 5px; /* Space before the arrow */
+}
+
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position it relative to the selector */
+  top: 100%; /* Position it below the selector */
+  left: 0;
+  background-color: #495057; /* Background color of dropdown */
+  border-radius: 5px;
+  width: 100%; /* Full width */
+  z-index: 1; /* On top of other elements */
+}
+
+.option {
+  padding: 10px; /* Space inside each option */
+  cursor: pointer; /* Pointer for hover effect */
+}
+
+.option:hover {
+  background-color: #343a40; /* Change background on hover */
+}
+/* lang-end */
+/* navbar -end*/
+/* header-end */

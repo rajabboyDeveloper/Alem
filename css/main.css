@@ -7,6 +7,7 @@
 }
 .wrapper {
   width: 100%;
+  overflow: hidden;
 }
 .container {
   max-width: 1540px;
@@ -88,6 +89,7 @@
   align-items: center;
   min-width: 600px;
   justify-content: space-between;
+  list-style-type: none;
 }
 .item-list {
 }
@@ -112,13 +114,9 @@
   text-decoration: none;
   width: 243px;
   height: 49px;
-  border: 1px solid;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   display: flex;
-  border-image-source: linear-gradient(
-    102.03deg,
-    rgba(255, 255, 255, 0.4) 32.44%,
-    rgba(255, 255, 255, 0.15) 67.56%
-  );
+
   box-shadow: 0px 2px 20px 0px rgba(180, 2, 25, 0.5);
   background-color: rgba(180, 2, 25, 1);
   padding: 15.5px 14px;
@@ -597,12 +595,8 @@
 .basketBox {
   width: 60px;
   height: 60px;
-  border: 1px solid;
-  border-image-source: linear-gradient(
-    102.03deg,
-    rgba(255, 255, 255, 0.4) 32.44%,
-    rgba(255, 255, 255, 0.15) 67.56%
-  );
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
   background-color: rgba(180, 2, 25, 1);
   border-radius: 12px;
   display: flex;
@@ -725,12 +719,8 @@
   align-items: center;
   justify-content: center;
   background: rgba(29, 85, 183, 1);
-  border: 1px solid;
-  border-image-source: linear-gradient(
-    102.03deg,
-    rgba(255, 255, 255, 0.4) 32.44%,
-    rgba(255, 255, 255, 0.15) 67.56%
-  );
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -783,14 +773,7 @@
 }
 
 .mainFive__card {
-  border: 1px solid;
-
-  border-image-source: linear-gradient(
-    102.03deg,
-    rgba(255, 255, 255, 0.4) 32.44%,
-    rgba(255, 255, 255, 0.15) 67.56%
-  );
-
+  border: 1px solid rgba(255, 255, 255, 0.4);
   width: 221px;
 }
 .mainFive__card-title {
@@ -877,12 +860,8 @@
 .trustBox {
   width: 60px;
   height: 60px;
-  border: 1px solid;
-  border-image-source: linear-gradient(
-    102.03deg,
-    rgba(255, 255, 255, 0.4) 32.44%,
-    rgba(255, 255, 255, 0.15) 67.56%
-  );
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
   background-color: rgba(180, 2, 25, 1);
   border-radius: 12px;
   display: flex;

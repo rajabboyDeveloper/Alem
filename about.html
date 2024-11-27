@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./assets/icons/logo.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О компании</title>
+    <link rel="stylesheet" href="./css/about.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="head-up">
+          <div class="container">
+            <div class="head-up__network">
+              <p class="up__network-text">Социальные сети:</p>
+              <img
+                src="./assets/icons/teleg.svg"
+                class="up__network-telegram"
+                alt=""
+              />
+              <img
+                src="./assets/icons/facebook.svg"
+                class="up__network-facebook"
+                alt=""
+              />
+            </div>
+            <div class="language-selector" tabindex="0">
+              <img
+                src="https://flagcdn.com/w20/ru.png"
+                alt="Russian Flag"
+                class="flag"
+              />
+              <span class="language" id="current-language">Русский</span>
+              <div class="arrow">
+                <img src="./assets/icons/arrow-bottom.svg" alt="" />
+              </div>
+              <div class="dropdown">
+                <div
+                  class="option"
+                  data-lang="ru"
+                  onclick="changeLanguage('Русский', 'https://flagcdn.com/w20/ru.png')"
+                >
+                  Русский
+                </div>
+                <div
+                  class="option"
+                  data-lang="en"
+                  onclick="changeLanguage('English', 'https://flagcdn.com/w20/gb.png')"
+                >
+                  English
+                </div>
+                <div
+                  class="option"
+                  data-lang="uz"
+                  onclick="changeLanguage('O‘zbek', 'https://flagcdn.com/w20/uz.png')"
+                >
+                  O‘zbek
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-main">
+          <div class="container">
+            <nav class="navbar">
+              <a href="./index.html" class="nav-logo">
+                <img
+                  src="./assets/icons/logo-nav.svg"
+                  class="nav-logo__img"
+                  alt=""
+                />
+              </a>
+              <ul class="item">
+                <li class="item-list">
+                  <a href="" class="item-link">Главная</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">О компании</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">Продукция</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">Объекты</a>
+                </li>
+                <li class="item-list">
+                  <a href="" class="item-link">Контакты</a>
+                </li>
+              </ul>
+              <a href="tel:+998950220101" class="item-phone1">
+                <img src="./assets/icons/phone.svg" alt="" class="phone-icon" />
+                <div class="line-phone"></div>
+                <span class="phone-text">+998 (95) 022-01-01</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main"></main>
+      
+      <footer class="footer"></footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
