@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/logo.svg" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="head-up">
+          <div class="container">
+            <div class="head-up__network">
+              <p class="up__network-text">Социальные сети:</p>
+              <img
+                src="./assets/icons/teleg.svg"
+                class="up__network-telegram"
+                alt=""
+              />
+              <img
+                src="./assets/icons/facebook.svg"
+                class="up__network-facebook"
+                alt=""
+              />
+            </div>
+            <div class="language-selector" tabindex="0">
+              <img
+                src="https://flagcdn.com/w20/ru.png"
+                alt="Russian Flag"
+                class="flag"
+              />
+              <span class="language" id="current-language">Русский</span>
+              <div class="arrow">
+                <img src="./assets/icons/arrow-bottom.svg" alt="" />
+              </div>
+              <div class="dropdown">
+                <div
+                  class="option"
+                  data-lang="ru"
+                  onclick="changeLanguage('Русский', 'https://flagcdn.com/w20/ru.png')"
+                >
+                  Русский
+                </div>
+                <div
+                  class="option"
+                  data-lang="en"
+                  onclick="changeLanguage('English', 'https://flagcdn.com/w20/gb.png')"
+                >
+                  English
+                </div>
+                <div
+                  class="option"
+                  data-lang="uz"
+                  onclick="changeLanguage('O‘zbek', 'https://flagcdn.com/w20/uz.png')"
+                >
+                  O‘zbek
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-main">
+          <div class="container">
+            <nav class="navbar">
+              <a href="./index.html" class="nav-logo">
+                <img
+                  src="./assets/icons/logo-nav.svg"
+                  class="nav-logo__img"
+                  alt=""
+                />
+              </a>
+              <ul class="item">
+                <li class="item-list">
+                  <a href="./index.html" class="item-link">Главная</a>
+                </li>
+                <li class="item-list">
+                  <a href="./about.html" class="item-link">О компании</a>
+                </li>
+                <li class="item-list">
+                  <a href="./product.html" class="item-link">Продукция</a>
+                </li>
+                <li class="item-list">
+                  <a href="./objects.html" class="item-link">Объекты</a>
+                </li>
+                <li class="item-list">
+                  <a href="./contact.html" class="item-link">Контакты</a>
+                </li>
+              </ul>
+              <a href="tel:+998950220101" class="item-phone1">
+                <img src="./assets/icons/phone.svg" alt="" class="phone-icon" />
+                <div class="line-phone"></div>
+                <span class="phone-text">+998 (95) 022-01-01</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <h1 class="head-title">Контакты</h1>
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__content__form">
+              <h2 class="footer__content__form-title">
+                Закажите обратный звонок эксперта
+              </h2>
+              <p class="footer__content__form-text">
+                Отправьте данные и в ближайшее время вам перезвонит один из
+                экспертов.
+              </p>
+              <form action="" method="">
+                <div class="inp-group">
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    class="inp-group__name"
+                  />
+                  <div class="input-container">
+                    <input id="phone" type="tel" />
+                  </div>
+                </div>
+                <textarea
+                  name=""
+                  class="footer__content__form-textarea"
+                  placeholder="Комментарий"
+                ></textarea>
+                <button type="button" class="footer__content__form-btn">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="footer__content__callback">
+              <h2 class="footer__content__callback-title">Свяжитесь с нами</h2>
+              <a
+                href="tel:+998950220101"
+                class="footer__content__callback-phone"
+              >
+                <img src="./assets/icons/phone.svg" alt="" />
+                +998 (95) 022-01-01</a
+              >
+              <a
+                href="mailto:alem@info.uz"
+                class="footer__content__callback-email"
+              >
+                <img src="./assets/icons/email-foot.svg" alt="" />
+                alem@info.uz</a
+              >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.6212167944855!2d69.28382387646641!3d41.295347571311765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8accc24bae4f%3A0xf0f54631b55a44a7!2z0JTQstC-0YDQtdGGINC60YPQu9GM0YLRg9GA0Ysg0LbQtdC70LXQt9C90L7QtNC-0YDQvtC20L3QuNC60L7Qsg!5e0!3m2!1sru!2s!4v1732647363826!5m2!1sru!2s"
+                width="100%"
+                height="144"
+                style="border: 0; border-radius: 12px"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="foot-end">
+            <img src="./assets/icons/logo.svg" alt="" />
+            <div class="foot-linear"></div>
+          </div>
+          <p class="footer-end__text">
+            © 2024 OOO “Alem.uz”. Все права защищены.
+          </p>
+        </div>
+      </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
