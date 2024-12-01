@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Additional</title>
+    <link rel="icon" href="./assets/icons/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="./css/additional.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="head-up">
+          <div class="container">
+            <div class="head-up__network">
+              <p class="up__network-text">Социальные сети:</p>
+              <img
+                src="./assets/icons/teleg.svg"
+                class="up__network-telegram"
+                alt=""
+              />
+              <img
+                src="./assets/icons/facebook.svg"
+                class="up__network-facebook"
+                alt=""
+              />
+            </div>
+            <div class="language-selector" tabindex="0">
+              <img
+                src="https://flagcdn.com/w20/ru.png"
+                alt="Russian Flag"
+                class="flag"
+              />
+              <span class="language" id="current-language">Русский</span>
+              <div class="arrow">
+                <img src="./assets/icons/arrow-bottom.svg" alt="" />
+              </div>
+              <div class="dropdown">
+                <div
+                  class="option"
+                  data-lang="ru"
+                  onclick="changeLanguage('Русский', 'https://flagcdn.com/w20/ru.png')"
+                >
+                  Русский
+                </div>
+                <div
+                  class="option"
+                  data-lang="en"
+                  onclick="changeLanguage('English', 'https://flagcdn.com/w20/gb.png')"
+                >
+                  English
+                </div>
+                <div
+                  class="option"
+                  data-lang="uz"
+                  onclick="changeLanguage('O‘zbek', 'https://flagcdn.com/w20/uz.png')"
+                >
+                  O‘zbek
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="head-main">
+          <div class="container">
+            <nav class="navbar">
+              <a href="./index.html" class="nav-logo">
+                <img
+                  src="./assets/icons/logo-nav.svg"
+                  class="nav-logo__img"
+                  alt=""
+                />
+              </a>
+              <ul class="item">
+                <li class="item-list">
+                  <a href="./index.html" class="item-link">Главная</a>
+                </li>
+                <li class="item-list">
+                  <a href="./about.html" class="item-link">О компании</a>
+                </li>
+                <li class="item-list">
+                  <a href="./product.html" class="item-link">Продукция</a>
+                </li>
+                <li class="item-list">
+                  <a href="./objects.html" class="item-link">Объекты</a>
+                </li>
+                <li class="item-list">
+                  <a href="./contact.html" class="item-link">Контакты</a>
+                </li>
+              </ul>
+              <a href="tel:+998950220101" class="item-phone1">
+                <img src="./assets/icons/phone.svg" alt="" class="phone-icon" />
+                <div class="line-phone"></div>
+                <span class="phone-text">+998 (95) 022-01-01</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main-one">
+          <div class="containerTwo">
+            <div class="main-one__content">
+              <a href="" class="all-product-link">
+                <img src="./assets/icons/arrow-product-left.svg" alt="" />
+                Все продукты
+              </a>
+              <div class="dye">
+                <div class="dyeBox">
+                  <img
+                    src="./assets/images/dye.png"
+                    alt=""
+                    class="dyeBox-img"
+                  />
+                  <img
+                    src="./assets/images/dye-two.png"
+                    alt=""
+                    class="dyeBox-img"
+                  />
+                </div>
+                <div class="dyeBoxTwo">
+                  <img src="./assets/images/dye-three.png" alt="" />
+                </div>
+                <div class="dyeBoxThree">
+                  <h2 class="dyeBoxThree-title">
+                    Эмаль АК-511 для дорожной разметки
+                  </h2>
+                  <p class="dyeBoxThree-text">
+                    <span>Эмаль  АК-511 Дорожной разметки </span>
+
+                    <span>Краски для дорожной разметки. Краска АК-511 </span>
+                    <span>
+                      Краска для горизонтальной разметки автомобильных дорог
+                      общего пользования,</span
+                    >
+                    <span> аэропортов, промышленных предприятий.</span>
+                  </p>
+                  <div class="dye-btn__box">
+                    <button class="dye-oclock__one">
+                      <img src="./assets/icons/24.svg" alt="" />
+                      24часа
+                    </button>
+                    <button class="dye-oclock__two">
+                      <img src="./assets/icons/timer.svg" alt="" />
+                      12 месяцев
+                    </button>
+                  </div>
+                  <a id="custom-modal-open-btn" class="dye-box__link"
+                    >Отправить заявку на продукт
+                  </a>
+                </div>
+              </div>
+              <div class="main__one-linear"></div>
+              <h4 class="main-one__content-title">Описание</h4>
+              <ul class="main-one__content-item">
+                <li class="main-one__content-list">
+                  Эмаль  АК-511 Дорожной разметки
+                </li>
+                <li class="main-one__content-list">
+                  Краски для дорожной разметки Краска АК-511
+                </li>
+                <li class="main-one__content-list">
+                  Краска для горизонтальной разметки автомобильных дорог общего
+                  пользования, аэропортов, промышленных предприятий.
+                </li>
+                <li class="main-one__content-list">
+                  Краска АК-511 используется со световозвращающими
+                  стеклошариками на неосвещенных участках дорог
+                </li>
+                <li class="main-one__content-list">
+                  Краска АК-511  прекрасно подходит и для нанесения разметки на
+                  оживленных улицах, в аэропортах, на предприятиях. Выдерживает
+                  большой транспортный поток, устойчива к истиранию и
+                  воздействию химических реагентов
+                </li>
+                <li class="main-one__content-list">Параметры краски АК-511:</li>
+                <li class="main-one__content-list">
+                  •  готова к употреблению и не нуждается в разбавлении
+                  растворителем;
+                </li>
+                <li class="main-one__content-list">
+                  •  расход краски  500-900 г/м2 в зависимости от категории
+                  дороги;
+                </li>
+                <li class="main-one__content-list">
+                  •  время окончательного высыхания - 20-30 минут
+                </li>
+                <li class="main-one__content-list">
+                  •  устойчива к истиранию, длительному воздействию влаги и
+                  химрастворов.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="main-two">
+          <div class="containerTwo">
+            <h1 class="main-two__title">Другие продукты</h1>
+            <div class="main-two__content">
+              <div class="main-two__content__box">
+                <img src="./assets/images/detail-2.png" alt="" />
+                <div class="two__content0box">
+                  <h2 class="two__content0box-title">
+                    Эпоксидная эмаль Alem-500
+                  </h2>
+                  <div class="two__contentbox">
+                    <button type="button" class="two__contentbox-one">
+                      <img src="./assets/icons/24.svg" alt="" />
+                      24часа
+                    </button>
+                    <button type="button" class="two__contentbox-two">
+                      <img src="./assets/icons/timer.svg" alt="" />
+                      12месяцев
+                    </button>
+                  </div>
+                  <a href="" class="two__contentbox-link">Посмотреть больше</a>
+                </div>
+              </div>
+              <div class="main-two__content__box">
+                <img src="./assets/images/detail-2.png" alt="" />
+                <div class="two__content0box">
+                  <h2 class="two__content0box-title">
+                    Эпоксидная эмаль Alem-500
+                  </h2>
+                  <div class="two__contentbox">
+                    <button type="button" class="two__contentbox-one">
+                      <img src="./assets/icons/24.svg" alt="" />
+                      24часа
+                    </button>
+                    <button type="button" class="two__contentbox-two">
+                      <img src="./assets/icons/timer.svg" alt="" />
+                      12месяцев
+                    </button>
+                  </div>
+                  <a href="" class="two__contentbox-link">Посмотреть больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- modal -->
+        <div id="custom-modal" class="custom-modal-overlay">
+          <div class="custom-modal-container">
+            <span class="custom-modal-close-btn" id="custom-modal-close-btn"
+              >&times;</span
+            >
+            <h2 class="custom-modal-title">Обратная связь</h2>
+            <p class="custom-modal-text">
+              Обращаем ваше внимание, что режим работы отдела продаж с 9:00 до
+              21:00
+            </p>
+            <form class="custom-modal-form">
+              <input
+                type="text"
+                placeholder="Имя"
+                class="custom-modal-input"
+                required
+              />
+              <div class="custom-modal-phone-input">
+                <span class="custom-modal-flag">🇺🇿</span>
+                <input
+                  type="tel"
+                  placeholder="+998 99 999 99 99"
+                  class="custom-modal-input"
+                  required
+                />
+              </div>
+              <button type="submit" class="custom-modal-submit-btn">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- modal -->
+      </main>
+      <div class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__content__form">
+              <h2 class="footer__content__form-title">
+                Закажите обратный звонок эксперта
+              </h2>
+              <p class="footer__content__form-text">
+                Отправьте данные и в ближайшее время вам перезвонит один из
+                экспертов.
+              </p>
+              <form action="" method="">
+                <div class="inp-group">
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    class="inp-group__name"
+                  />
+                  <div class="input-container">
+                    <input id="phone" type="tel" />
+                  </div>
+                </div>
+                <textarea
+                  name=""
+                  class="footer__content__form-textarea"
+                  placeholder="Комментарий"
+                ></textarea>
+                <button type="button" class="footer__content__form-btn">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="footer__content__callback">
+              <h2 class="footer__content__callback-title">Свяжитесь с нами</h2>
+              <a
+                href="tel:+998950220101"
+                class="footer__content__callback-phone"
+              >
+                <img src="./assets/icons/phone.svg" alt="" />
+                +998 (95) 022-01-01</a
+              >
+              <a
+                href="mailto:alem@info.uz"
+                class="footer__content__callback-email"
+              >
+                <img src="./assets/icons/email-foot.svg" alt="" />
+                alem@info.uz</a
+              >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.6212167944855!2d69.28382387646641!3d41.295347571311765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8accc24bae4f%3A0xf0f54631b55a44a7!2z0JTQstC-0YDQtdGGINC60YPQu9GM0YLRg9GA0Ysg0LbQtdC70LXQt9C90L7QtNC-0YDQvtC20L3QuNC60L7Qsg!5e0!3m2!1sru!2s!4v1732647363826!5m2!1sru!2s"
+                width="100%"
+                height="144"
+                style="border: 0; border-radius: 12px"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="foot-end">
+            <img src="./assets/icons/logo.svg" alt="" />
+            <div class="foot-linear"></div>
+          </div>
+          <p class="footer-end__text">
+            © 2024 OOO “Alem.uz”. Все права защищены.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      const modal = document.getElementById("custom-modal");
+      const openModalBtn = document.getElementById("custom-modal-open-btn");
+      const closeModalBtn = document.getElementById("custom-modal-close-btn");
+
+      openModalBtn.addEventListener("click", () => {
+        modal.style.display = "flex";
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+
+      // Закрытие окна при клике вне контента
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
