@@ -83,7 +83,32 @@
                   <a href="./about.html" class="item-link">О компании</a>
                 </li>
                 <li class="item-list">
-                  <a href="./product.html" class="item-link">Продукция</a>
+                  <div class="custom-dropdown">
+                    <button class="custom-dropdown-toggle">
+                      Продукция
+                      <img src="./assets/icons/bottom-icon.svg" alt="" />
+                    </button>
+                    <div class="custom-dropdown-menu">
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Эмаль <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Лаки <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Разбавитель
+                        <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Смолы
+                        <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Краски
+                        <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </li>
                 <li class="item-list">
                   <a href="./objects.html" class="item-link">Объекты</a>
@@ -170,8 +195,33 @@
         </div>
       </header>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
 
     <script src="./js/script.js"></script>
+    <script>
+      // Offcanvas functionality
+      const openOffcanvas = document.getElementById("openOffcanvas");
+      const closeOffcanvas = document.getElementById("closeOffcanvas");
+      const offcanvasOverlay = document.getElementById("offcanvasOverlay");
+      const offcanvasMenu = document.getElementById("offcanvasMenu");
+
+      openOffcanvas.addEventListener("click", () => {
+        offcanvasOverlay.style.display = "block";
+        offcanvasMenu.style.transform = "translateX(300px)";
+      });
+
+      closeOffcanvas.addEventListener("click", () => {
+        offcanvasOverlay.style.display = "none";
+        offcanvasMenu.style.transform = "translateX(-300px)";
+      });
+
+      offcanvasOverlay.addEventListener("click", (e) => {
+        if (e.target === offcanvasOverlay) {
+          offcanvasOverlay.style.display = "none";
+          offcanvasMenu.style.transform = "translateX(-300px)";
+        }
+      });
+    </script>
   </body>
 </html>

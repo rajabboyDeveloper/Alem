@@ -19,52 +19,7 @@ document
       dropdown.style.display === "block" ? "none" : "block";
   });
 // Инициализация Swiper
-const swiper = new Swiper(".swiper", {
-  navigation: {
-    nextEl: "",
-    prevEl: "",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  slidesPerView: 6, // Количество карточек на экране
-  spaceBetween: 20, // Расстояние между карточками (в пикселях)
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-const swipertwo = new Swiper(".swiper-one", {
-  navigation: {
-    nextEl: "",
-    prevEl: "",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  slidesPerView: 4, // Количество карточек на экране
-  spaceBetween: 20, // Расстояние между карточками (в пикселях)
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-const swiperthree = new Swiper(".swiper-two", {
-  slidesPerView: 1.5, // Видно 1.5 карточки
-  spaceBetween: 20, // Расстояние между карточками
-  centeredSlides: true, // Центрируем активный слайд
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+
 const input = document.querySelector("#phone");
 
 // Инициализация intl-tel-input
@@ -83,5 +38,18 @@ input.addEventListener("blur", () => {
     console.log("Валидный номер телефона:", iti.getNumber());
   } else {
     console.error("Неверный номер телефона");
+  }
+});
+const dropdownToggle = document.querySelector(".custom-dropdown-toggle");
+const dropdownMenu = document.querySelector(".custom-dropdown-menu");
+
+dropdownToggle.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("active");
+});
+
+// Close the dropdown if clicked outside
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".custom-dropdown")) {
+    dropdownMenu.classList.remove("active");
   }
 });

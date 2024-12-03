@@ -88,7 +88,32 @@
                   <a href="./about.html" class="item-link">О компании</a>
                 </li>
                 <li class="item-list">
-                  <a href="./product.html" class="item-link">Продукция</a>
+                  <div class="custom-dropdown">
+                    <button class="custom-dropdown-toggle">
+                      Продукция
+                      <img src="./assets/icons/bottom-icon.svg" alt="" />
+                    </button>
+                    <div class="custom-dropdown-menu">
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Эмаль <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Лаки <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Разбавитель
+                        <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Смолы
+                        <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                      <a href="./product.html" class="custom-dropdown-item">
+                        Краски
+                        <img src="./assets/icons/redarrow.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </li>
                 <li class="item-list">
                   <a href="./objects.html" class="item-link">Объекты</a>
@@ -595,45 +620,51 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
-      const navigationSwiper = new Swiper(".navigation-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        centeredSlides: true,
-        slideToClickedSlide: true,
+      const swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: "",
+          prevEl: "",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 6, // Количество карточек на экране
+        spaceBetween: 20, // Расстояние между карточками (в пикселях)
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      const swipertwo = new Swiper(".swiper-one", {
+        navigation: {
+          nextEl: "",
+          prevEl: "",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 4, // Количество карточек на экране
+        spaceBetween: 20, // Расстояние между карточками (в пикселях)
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      const swiperthree = new Swiper(".swiper-two", {
+        slidesPerView: 1.5, // Видно 1.5 карточки
+        spaceBetween: 20, // Расстояние между карточками
+        centeredSlides: true, // Центрируем активный слайд
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      });
-
-      const imageSwiper = new Swiper(".image-swiper", {
-        slidesPerView: 1,
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-      });
-
-      // Link both Swipers
-      navigationSwiper.controller.control = imageSwiper;
-      imageSwiper.controller.control = navigationSwiper;
-
-      // Handle thumbnail active states
-      const thumbnails = document.querySelectorAll(".mini-thumbnail");
-      imageSwiper.on("slideChange", () => {
-        thumbnails.forEach((thumbnail, index) => {
-          if (index === imageSwiper.activeIndex) {
-            thumbnail.classList.add("active");
-          } else {
-            thumbnail.classList.remove("active");
-          }
-        });
-      });
-
-      thumbnails.forEach((thumbnail, index) => {
-        thumbnail.addEventListener("click", () => {
-          imageSwiper.slideTo(index);
-        });
       });
     </script>
   </body>
