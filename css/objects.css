@@ -1092,7 +1092,7 @@
 }
 @media screen and (max-width: 480px) {
   .main-content__box {
-    width: 80%;
+    width: 100%;
   }
   .main-content {
     align-items: center;
