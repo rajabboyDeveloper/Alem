@@ -53,3 +53,32 @@ document.addEventListener("click", (event) => {
     dropdownMenu.classList.remove("active");
   }
 });
+const openBtn = document.getElementById("open-offcanvas");
+const closeBtn = document.getElementById("close-offcanvas");
+const offcanvasContainer = document.getElementById("offcanvas-container");
+const offcanvas = document.getElementById("offcanvas");
+
+openBtn.addEventListener("click", () => {
+  offcanvasContainer.style.display = "flex";
+  setTimeout(() => offcanvas.classList.add("show"), 10);
+});
+
+closeBtn.addEventListener("click", () => {
+  offcanvas.classList.remove("show");
+  setTimeout(() => (offcanvasContainer.style.display = "none"), 300);
+});
+
+offcanvasContainer.addEventListener("click", (event) => {
+  if (event.target === offcanvasContainer) {
+    offcanvas.classList.remove("show");
+    setTimeout(() => (offcanvasContainer.style.display = "none"), 300);
+  }
+});
+const collapseHeader = document.getElementById("collapse-header");
+const collapseBody = document.getElementById("collapse-body");
+const collapseIcon = document.getElementById("collapse-icon");
+
+collapseHeader.addEventListener("click", () => {
+  const isVisible = collapseBody.classList.toggle("show");
+  collapseIcon.classList.toggle("rotate", isVisible);
+});
