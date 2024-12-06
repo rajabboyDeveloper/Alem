@@ -1364,5 +1364,47 @@
     width: 100%;
     padding-top: 10px;
   }
+  .mainThree-content {
+    flex-direction: column;
+  }
+  .threeBox {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-six__content {
+    flex-direction: column;
+  }
+  .main-six__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .head-main__title {
+    font-size: 35px;
+  }
+  .head-main__text,
+  .head-main__textTwo,
+  .aboutheadTwo-text,
+  .aboutheadTwo-mini__title {
+    font-size: 14px;
+  }
+  .aboutheadTwo-title {
+    font-size: 35px;
+  }
+  .alembanner-photo {
+    height: 60px;
+  }
+  .main-one__title,
+  .mainThree__title,
+  .main-six__title {
+    font-size: 27px;
+
+    line-height: 30px;
+  }
+  .threeBox__title {
+    font-size: 18px;
+  }
 }
 /* about-media-end */
