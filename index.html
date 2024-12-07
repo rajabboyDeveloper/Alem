@@ -799,6 +799,28 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1100: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+          1250: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        },
       });
       const swipertwo = new Swiper(".swiper-one", {
         navigation: {
@@ -815,6 +837,30 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          536: {
+            slidesPerView: 1,
+          },
+          650: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          950: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1100: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1250: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
       });
       const swiperthree = new Swiper(".swiper-two", {
         slidesPerView: 1.5, // Видно 1.5 карточки
@@ -828,6 +874,21 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          650: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          1000: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
         },
       });
     </script>
@@ -843,7 +904,7 @@
             loop: false,
             nav: false,
             items: 1,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 4000,
             animateOut: "fadeOut",
             animateIn: "fadeIn",
@@ -865,13 +926,14 @@
             loop: false,
             nav: true,
             margin: 10,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             responsive: {
-              0: { items: 1 },
-              600: { items: 3 },
-              1000: { items: 5 },
+              0: { items: 2, stagePadding: 20, margin: 0 },
+              740: { items: 2, stagePadding: 20, margin: 0 },
+              1000: { items: 4 },
+              1350: { items: 5 },
             },
           })
           .on("click", ".owl-item", function () {
