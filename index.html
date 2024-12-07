@@ -5,6 +5,7 @@
     <link rel="icon" href="./assets/icons/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alem</title>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css"
@@ -13,6 +14,14 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -82,7 +91,7 @@
               </a>
               <ul class="item">
                 <li class="item-list">
-                  <a href="./about.html" class="item-link">Главная</a>
+                  <a href="./index.html" class="item-link">Главная</a>
                 </li>
                 <li class="item-list">
                   <a href="./about.html" class="item-link">О компании</a>
@@ -127,11 +136,162 @@
                 <div class="line-phone"></div>
                 <span class="phone-text">+998 (95) 022-01-01</span>
               </a>
+              <div class="nav-burger">
+                <img
+                  src="./assets/icons/burger-menu.svg"
+                  alt=""
+                  id="open-offcanvas"
+                />
+
+                <div class="offcanvas-container" id="offcanvas-container">
+                  <div class="offcanvas" id="offcanvas">
+                    <div class="offcanvas-header">
+                      <button class="close-btn" id="close-offcanvas">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="offcanvas-menu">
+                        <li class="offcanvas-menu-item">
+                          <a href="./index.html" class="offcanvas-menu-link"
+                            >Главная</a
+                          >
+                        </li>
+                        <li class="offcanvas-menu-item">
+                          <a href="./about.html" class="offcanvas-menu-link"
+                            >О компании</a
+                          >
+                        </li>
+                        <li class="offcanvas-menu-item">
+                          <div class="collapse-container">
+                            <div class="collapse-header" id="collapse-header">
+                              Продукция
+                            </div>
+                            <div class="collapse-body" id="collapse-body">
+                              <a href="./product.html" class="collapse-link"
+                                >Эмаль
+                                <img
+                                  src="./assets/icons/redarrow.svg"
+                                  class="collapse-icon"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="./product.html" class="collapse-link"
+                                >Лаки
+                                <img
+                                  src="./assets/icons/redarrow.svg"
+                                  class="collapse-icon"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="./product.html" class="collapse-link"
+                                >Разбавитель
+                                <img
+                                  src="./assets/icons/redarrow.svg"
+                                  class="collapse-icon"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="./product.html" class="collapse-link"
+                                >Смолы
+                                <img
+                                  src="./assets/icons/redarrow.svg"
+                                  class="collapse-icon"
+                                  alt=""
+                                />
+                              </a>
+                              <a href="./product.html" class="collapse-link"
+                                >Краски
+                                <img
+                                  src="./assets/icons/redarrow.svg"
+                                  class="collapse-icon"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="offcanvas-menu-item">
+                          <a href="./objects.html" class="offcanvas-menu-link"
+                            >Объекты</a
+                          >
+                        </li>
+                        <li class="offcanvas-menu-item">
+                          <a href="./contact.html" class="offcanvas-menu-link"
+                            >Контакты</a
+                          >
+                        </li>
+                      </ul>
+                      <a href="tel:+998950220101" class="offcanvas-phone-link">
+                        <img
+                          src="./assets/icons/phone.svg"
+                          alt=""
+                          class="offcanvas-phone-icon"
+                        />
+                        <div class="offcanvas-line-phone"></div>
+                        <span class="offcanvas-phone-text"
+                          >+998 (95) 022-01-01</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </nav>
             <div class="head-main__content">
               <h1 class="head-title">Производители</h1>
               <h1 class="head-titleTwo">лакокрасочных материалов</h1>
               <h1 class="head-titleThree">в Узбекистане</h1>
+            </div>
+            <div class="carousels">
+              <div class="carousel-main owl-carousel">
+                <div class="owal-title">Alem enamel</div>
+                <div class="owal-title">Alem Neolite</div>
+                <div class="owal-title">Alem lak</div>
+                <div class="owal-title">Alem enamel</div>
+                <div class="owal-title">Alem Razbavitel</div>
+                <div class="owal-title">Alem Neolite</div>
+                <div class="owal-title">Alem lak</div>
+              </div>
+              <div class="owl-car">
+                <div class="carousel-nav owl-carousel">
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/ovval.png"
+                    class="olwTwo-img"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -345,205 +505,207 @@
             </div>
           </div>
         </section>
-        <section class="main-four">
-          <div class="container">
-            <div class="basketBox">
-              <img src="./assets/icons/basket.svg" alt="" />
+        <section class="blackSEc">
+          <section class="main-four">
+            <div class="container">
+              <div class="basketBox">
+                <img src="./assets/icons/basket.svg" alt="" />
+              </div>
+              <h2 class="mainFour__title">Категории продукции</h2>
+              <div class="swiper swiper-one">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Эмаль</h2>
+                      <p class="mainFour__card-text">
+                        Декоративные и антикоррозионные покрытия для
+                        металлических изделий с эффектом молотковой эмали.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Лаки</h2>
+                      <p class="mainFour__card-text">
+                        Экологически безопасные акриловые краски для отделки
+                        интерьеров и фасадов.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Разбавитель</h2>
+                      <p class="mainFour__card-text">
+                        Долговечные и стойкие алкидные и нитро-эмали для
+                        внутренних и наружных работ.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Смолы</h2>
+                      <p class="mainFour__card-text">
+                        Высококачественные алкидные и уралкидные грунтовки для
+                        подготовки поверхностей под окраску.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Разбавитель</h2>
+                      <p class="mainFour__card-text">
+                        Долговечные и стойкие алкидные и нитро-эмали для
+                        внутренних и наружных работ.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Смолы</h2>
+                      <p class="mainFour__card-text">
+                        Высококачественные алкидные и уралкидные грунтовки для
+                        подготовки поверхностей под окраску.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFour__card">
+                      <h2 class="mainFour__card-title">Смолы</h2>
+                      <p class="mainFour__card-text">
+                        Высококачественные алкидные и уралкидные грунтовки для
+                        подготовки поверхностей под окраску.
+                      </p>
+                      <a href="" class="mainFour__card-link">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination swiper-pagination-one"></div>
+              </div>
+              <div class="main-four__line"></div>
             </div>
-            <h2 class="mainFour__title">Категории продукции</h2>
-            <div class="swiper swiper-one">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Эмаль</h2>
-                    <p class="mainFour__card-text">
-                      Декоративные и антикоррозионные покрытия для металлических
-                      изделий с эффектом молотковой эмали.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Лаки</h2>
-                    <p class="mainFour__card-text">
-                      Экологически безопасные акриловые краски для отделки
-                      интерьеров и фасадов.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Разбавитель</h2>
-                    <p class="mainFour__card-text">
-                      Долговечные и стойкие алкидные и нитро-эмали для
-                      внутренних и наружных работ.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Смолы</h2>
-                    <p class="mainFour__card-text">
-                      Высококачественные алкидные и уралкидные грунтовки для
-                      подготовки поверхностей под окраску.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Разбавитель</h2>
-                    <p class="mainFour__card-text">
-                      Долговечные и стойкие алкидные и нитро-эмали для
-                      внутренних и наружных работ.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Смолы</h2>
-                    <p class="mainFour__card-text">
-                      Высококачественные алкидные и уралкидные грунтовки для
-                      подготовки поверхностей под окраску.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="mainFour__card">
-                    <h2 class="mainFour__card-title">Смолы</h2>
-                    <p class="mainFour__card-text">
-                      Высококачественные алкидные и уралкидные грунтовки для
-                      подготовки поверхностей под окраску.
-                    </p>
-                    <a href="" class="mainFour__card-link">Подробнее</a>
-                  </div>
-                </div>
+          </section>
+          <section class="main-five">
+            <div class="container">
+              <div class="objectsBox">
+                <img src="./assets/icons/basket.svg" alt="" />
               </div>
-              <!-- Pagination -->
-              <div class="swiper-pagination swiper-pagination-one"></div>
+              <h2 class="objectsBox__title">ОБЪЕКТЫ</h2>
+              <div class="swiper swiper-two">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Kilim Beige</h2>
+                        <p class="mainFive__card-text">SW 6106</p>
+                      </div>
+                    </div>
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color2"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Tricorn Black</h2>
+                        <p class="mainFive__card-text">Tricorn Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Kilim Beige</h2>
+                        <p class="mainFive__card-text">SW 6106</p>
+                      </div>
+                    </div>
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color2"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Tricorn Black</h2>
+                        <p class="mainFive__card-text">Tricorn Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Kilim Beige</h2>
+                        <p class="mainFive__card-text">SW 6106</p>
+                      </div>
+                    </div>
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color2"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Tricorn Black</h2>
+                        <p class="mainFive__card-text">Tricorn Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Kilim Beige</h2>
+                        <p class="mainFive__card-text">SW 6106</p>
+                      </div>
+                    </div>
+                    <div class="mainFive__card">
+                      <div class="mainFive__card-color2"></div>
+                      <div class="mainFive__card-mini">
+                        <h2 class="mainFive__card-title">Tricorn Black</h2>
+                        <p class="mainFive__card-text">Tricorn Black</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Pagination -->
+              </div>
+              <div class="main-four__line"></div>
             </div>
-            <div class="main-four__line"></div>
-          </div>
-        </section>
-        <section class="main-five">
-          <div class="container">
-            <div class="objectsBox">
-              <img src="./assets/icons/basket.svg" alt="" />
-            </div>
-            <h2 class="objectsBox__title">ОБЪЕКТЫ</h2>
-            <div class="swiper swiper-two">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Kilim Beige</h2>
-                      <p class="mainFive__card-text">SW 6106</p>
-                    </div>
-                  </div>
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color2"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Tricorn Black</h2>
-                      <p class="mainFive__card-text">Tricorn Black</p>
-                    </div>
-                  </div>
+          </section>
+          <section class="main-six">
+            <div class="container">
+              <div class="trustBox">
+                <img src="./assets/icons/trust.svg" alt="" />
+              </div>
+              <h2 class="main-six__title">Нам доверяют</h2>
+              <div class="main-six__content">
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image.svg" alt="" />
                 </div>
-                <div class="swiper-slide">
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Kilim Beige</h2>
-                      <p class="mainFive__card-text">SW 6106</p>
-                    </div>
-                  </div>
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color2"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Tricorn Black</h2>
-                      <p class="mainFive__card-text">Tricorn Black</p>
-                    </div>
-                  </div>
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image2.svg" alt="" />
                 </div>
-                <div class="swiper-slide">
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Kilim Beige</h2>
-                      <p class="mainFive__card-text">SW 6106</p>
-                    </div>
-                  </div>
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color2"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Tricorn Black</h2>
-                      <p class="mainFive__card-text">Tricorn Black</p>
-                    </div>
-                  </div>
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image3.svg" alt="" />
                 </div>
-                <div class="swiper-slide">
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Kilim Beige</h2>
-                      <p class="mainFive__card-text">SW 6106</p>
-                    </div>
-                  </div>
-                  <div class="mainFive__card">
-                    <div class="mainFive__card-color2"></div>
-                    <div class="mainFive__card-mini">
-                      <h2 class="mainFive__card-title">Tricorn Black</h2>
-                      <p class="mainFive__card-text">Tricorn Black</p>
-                    </div>
-                  </div>
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image4.svg" alt="" />
                 </div>
-              </div>
-              <!-- Navigation Arrows -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <!-- Pagination -->
-            </div>
-            <div class="main-four__line"></div>
-          </div>
-        </section>
-        <section class="main-six">
-          <div class="container">
-            <div class="trustBox">
-              <img src="./assets/icons/trust.svg" alt="" />
-            </div>
-            <h2 class="main-six__title">Нам доверяют</h2>
-            <div class="main-six__content">
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image2.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image3.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image4.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image5.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image6.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image7.svg" alt="" />
-              </div>
-              <div class="main-six__card">
-                <img src="./assets/icons/trust-image8.svg" alt="" />
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image5.svg" alt="" />
+                </div>
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image6.svg" alt="" />
+                </div>
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image7.svg" alt="" />
+                </div>
+                <div class="main-six__card">
+                  <img src="./assets/icons/trust-image8.svg" alt="" />
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
       </main>
       <footer class="footer">
@@ -616,8 +778,10 @@
         </div>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
@@ -665,6 +829,63 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var navCarousel = $(".carousel-main");
+        var mainCarousel = $(".carousel-nav");
+
+        // Настройка главной карусели (1 элемент)
+        mainCarousel
+          .owlCarousel({
+            loop: false,
+            nav: false,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            animateOut: "fadeOut",
+            animateIn: "fadeIn",
+            autoplayHoverPause: true,
+          })
+          .on("changed.owl.carousel", function (event) {
+            var index = event.item.index; // Индекс текущего элемента
+            navCarousel.trigger("to.owl.carousel", [
+              index - navCarousel.find(".cloned").length / 2,
+              300,
+              true,
+            ]);
+          });
+
+        // Настройка навигационной карусели (5 элементов)
+        navCarousel
+          .owlCarousel({
+            stagePadding: 50,
+            loop: false,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+              0: { items: 1 },
+              600: { items: 3 },
+              1000: { items: 5 },
+            },
+          })
+          .on("click", ".owl-item", function () {
+            var index = $(this).index();
+            mainCarousel.trigger("to.owl.carousel", [index, 300, true]);
+          })
+          .on("changed.owl.carousel", function (event) {
+            var index = event.item.index;
+            mainCarousel.trigger("to.owl.carousel", [
+              index - navCarousel.find(".cloned").length / 2,
+              300,
+              true,
+            ]);
+          });
       });
     </script>
   </body>
